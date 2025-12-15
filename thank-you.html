@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thank You - Bélharmore Atelier</title>
+  
+  <!-- Google Analytics 4 (GA4) - REPLACE G-MEASUREMENT_ID WITH YOUR ACTUAL ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+    
+    // Track thank you page view as conversion
+    gtag('event', 'conversion', {
+      event_category: 'conversion',
+      event_label: 'form_success',
+      value: 1
+    });
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #E5E2DB, #F4F2ED);
+      color: #5A543D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .thank-you-container {
+      background: white;
+      padding: 60px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+    
+    .check-icon {
+      font-size: 4rem;
+      color: #B88E5A;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #5A543D;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .back-btn {
+      display: inline-block;
+      background: #B88E5A;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    
+    .back-btn:hover {
+      background: #5A543D;
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <div class="check-icon">✅</div>
+    <h1>Thank You!</h1>
+    <p>Your inquiry has been submitted successfully. We'll contact you within 24 hours to discuss your custom order and provide a personalized quote.</p>
+    <p>In the meantime, feel free to browse our gallery or contact us directly if you have any urgent questions.</p>
+    <a href="/" class="back-btn">Return to Homepage</a>
+  </div>
+</body>
+</html>
